@@ -1,0 +1,112 @@
+body,html
+top : 0px
+left : 0px
+font-weight :   100
+
+
+
+#map_canvas{
+
+width: 500px
+height: 400px
+}
+.half-container{
+
+background-size: cover
+display: flex
+justify-content : center
+height: 400px
+font-size: xx-large
+background : rgba(66, 190, 195,.3)
+background-image: url(http://maxcdn.thedesigninspiration.com/wp-content/uploads/2012/07/Dot-Green-l.jpg)
+z-index: 200
+width: 100%
+}
+.half-container .img-container{
+background-size: cover
+z-index: -1
+background-image: url('back.jpg')
+
+}
+
+@media (max-width :  568px)
+.flex-container{
+height: 400px
+width: 100%
+background: #ECECEC
+display: flex
+flex-wrap : wrap
+justify-content : space-around
+align-items : center
+flex-direction: column-reverse
+}
+.flex-items{
+margin-top: -200px
+margin-left: 1%
+background: #ffffff
+width: 25%
+height: 400px
+z-index: 8
+box-shadow: 0px 2px 0px  rgba(0,0,0,.3)
+border-radius: 4px
+}
+.flex-items img{
+width: 100%
+height: 50%
+}
+.flex-items .text_head{
+margin-top: 4%
+font-size : 1.3rem
+text-align: center
+display: block
+}
+
+
+.content-wrap{
+justify-content : center
+display: flex
+flex-direction:column-reverse
+align-item : center
+}
+
+
+.text_heading{
+margin-top: 12%
+}
+.flex-container{
+height: 400px
+width: 100%
+background: #ECECEC
+flex-direction : row		
+display: flex
+flex-wrap : wrap
+justify-content : space-around
+align-items : center
+}
+
+.flex-items{
+margin-top: -200px
+margin-left: 1%
+background: #ffffff
+width: 25%
+height: 400px
+z-index: 8
+box-shadow: 0px 2px 0px  rgba(0,0,0,.3)
+border-radius: 4px
+}
+.flex-items img{
+width: 100%
+height: 50%
+}
+.flex-items .text_head{
+margin-top: 4%
+font-size : 1.3rem
+text-align: center
+display: block
+}
+.btn-material{
+align-content : center
+border-radius: 0px
+box-shadow: 0px 1px 0px rgba(0,0,0,.2)
+transform : scale(1.001)
+}
