@@ -1,0 +1,78 @@
+<nav  class="navbar navbar-inverse navbar-responsive">
+	<span class="navbar-brand" href="#">Find trains</span> 
+	<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input ng-model = "train_no" id="email" type="number" class="validate">
+          <label for="email" data-error="invalid train no" data-success="right">Train_no</label>
+        </div>
+          <button type="button" ng-click="get_route()"  class="btn btn-primary">Get train info</button>
+      </div>
+    </form>
+  </div>
+  <!-- <ul class="nav navbar-nav">
+<li>
+<input type="search" ng-model = "train_no" id="input" class="form-control" value="" required="required" placeholder= "Enter train name or Number" title="">
+	</li>
+	<li>
+	
+	</li></ul>
+ --></nav>
+<br>
+<br>
+<br>
+<div class="container"
+<div ng-if = "loaded" >
+ <span>Loading train Info Please Wait</span>
+ <div ng-if = "loaded" class="progress">
+      <div class="indeterminate"></div>
+  </div>
+</div>
+<style type="text/css">
+.navbar-inverse{
+	padding: 1%;
+	display : flex;
+	justify-content : center;
+	color: white;
+	border-radius: 0px;
+	box-shadow: 0px 1px 0px rgba(0,0,0,.1);
+  background: #16556C;
+}
+.navbar-brand{
+	color: white;
+}
+.navbar-inverse ul li input{
+	width: 300px;
+}
+
+</style>
+<br><br><br><br><br>
+<div ng-cloak class="container">
+  <div class="row">
+    <div class="col m12">
+  <h2>{{train_name}}</h2>
+  <a href="/show_maps/{{train_no}}" ng-if = "loaded">Show on map</a>
+  <div class="table-responsive">         
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Station(code)</th>
+        <th>Scheduled Arrival</th>
+        <th>Scheduled Departure</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="train_route in trains_records">
+      <tr>
+        <td>{{train_route.fullname}}({{train_route.code}})</td>
+        <td>{{train_route.scharr}}</td>
+        <td>{{train_route.schdep}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>
+</div>
+</div>
+</div>
+</div>

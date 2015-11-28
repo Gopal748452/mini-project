@@ -1,0 +1,134 @@
+/* line 1, ../sass/map_api.scss */
+body, html {
+  font-family: Roboto;
+  top: 0px;
+  left: 0px;
+  font-weight: 100;
+}
+
+/* line 9, ../sass/map_api.scss */
+#map_canvas {
+  width: 500px;
+  height: 400px;
+}
+
+/* line 14, ../sass/map_api.scss */
+.half-container {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  font-size: xx-large;
+  background-position: 0px -200px
+  background: rgba(66, 190, 195, 0.3);
+  background-image: url(/station.jpg);
+  z-index: 200;
+  width: 100%;
+}
+
+/* line 26, ../sass/map_api.scss */
+.half-container .img-container {
+  background-size: cover;
+  z-index: -1;
+  background-image: url("back.jpg");
+}
+
+@media screen and (max-width: 568px) {
+  /* line 34, ../sass/map_api.scss */
+  .flex-container {
+    height: 400px;
+    width: 100%;
+    background: #ECECEC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+  /* line 44, ../sass/map_api.scss */
+  .flex-items {
+    margin-top: -200px;
+    margin-left: 1%;
+    background: #ffffff;
+    width: 25%;
+    height: 400px;
+    z-index: 8;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+
+  /* line 54, ../sass/map_api.scss */
+  .flex-items img {
+    width: 100%;
+    height: 50%;
+  }
+
+  /* line 58, ../sass/map_api.scss */
+  .flex-items .text_head {
+    margin-top: 4%;
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+  }
+}
+/* line 66, ../sass/map_api.scss */
+.content-wrap {
+  justify-content: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-item: center;
+}
+
+/* line 74, ../sass/map_api.scss */
+.text_heading {
+  font-weight: 400;
+  margin-top: 12%;
+  color : white;
+}
+
+/* line 77, ../sass/map_api.scss */
+.flex-container {
+  height: 400px;
+  width: 100%;
+  background: #ECECEC;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 87, ../sass/map_api.scss */
+.flex-items {
+  margin-top: -200px;
+  margin-left: 1%;
+  background: #ffffff;
+  width: 25%;
+  height: 400px;
+  z-index: 8;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+/* line 97, ../sass/map_api.scss */
+.flex-items img {
+  width: 100%;
+  height: 50%;
+}
+
+/* line 101, ../sass/map_api.scss */
+.flex-items .text_head {
+  margin-top: 4%;
+  font-size: 1.3rem;
+  text-align: center;
+  display: block;
+}
+
+/* line 107, ../sass/map_api.scss */
+.btn-material {
+  align-content: center;
+  border-radius: 0px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.001);
+}

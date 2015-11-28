@@ -1,0 +1,55 @@
+/*
+Error: Invalid CSS after "height": expected ";", was ": 400px"
+        on line 11 of /var/apache_def/mini_project/css/sass/api.scss
+
+6: 
+7: 
+8: #map_canvas{
+9: 
+10: width: 500px
+11: height: 400px
+12: }
+13: .half-container{
+14: 
+15: background-size: cover
+16: display: flex
+
+Backtrace:
+/var/apache_def/mini_project/css/sass/api.scss:11
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1163:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1099:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1094:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:761:in `block in try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1139:in `call'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1139:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:766:in `try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:696:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:661:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:650:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:642:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:635:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:660:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:650:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:117:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:42:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:393:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:268:in `render'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:17:in `block in render'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/lib/ruby/vendor_ruby/compass/import-once/engine.rb:16:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:491:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:469:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:328:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:150:in `call'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:150:in `block in _wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:145:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:145:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:43:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"height\": expected \";\", was \": 400px\"\A         on line 11 of /var/apache_def/mini_project/css/sass/api.scss\A \A 6: \A 7: \A 8: #map_canvas{\A 9: \A 10: width: 500px\A 11: height: 400px\A 12: }\A 13: .half-container{\A 14: \A 15: background-size: cover\A 16: display: flex"; }
